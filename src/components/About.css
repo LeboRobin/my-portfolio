@@ -1,0 +1,72 @@
+.about {
+    padding: 2rem;
+    background-color: #ffe4e1; /* Light Pink */
+  }
+  
+  .about h2 {
+    color: #ff69b4;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .about-image {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    border: 5px solid #ff69b4; /* Pink border */
+    object-fit: contain;
+  }
+  
+  .skills-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 1rem;
+    color: #ff69b4;
+  }
+  
+  .skills-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-footer {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .contact-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .contact-list li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .contact-list a {
+    color: #ff69b4;
+    text-decoration: none;
+  }
+  
+  .contact-list a:hover {
+    text-decoration: underline;
+  }
+  
+  .resume-link {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ff69b4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  .resume-link:hover {
+    background-color: #ff1493;
+  }
+  

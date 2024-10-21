@@ -1,0 +1,21 @@
+.footer {
+    background-color: #282c34; /* Dark background */
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px; /* Space between icons */
+  }
+  
+  .social-icons a {
+    color: white; /* Icon color */
+    transition: color 0.3s;
+  }
+  
+  .social-icons a:hover {
+    color: #61dafb; /* Change color on hover */
+  }
+  
