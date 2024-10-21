@@ -24,7 +24,7 @@ function Projects() {
       title: 'Weather Website',
       description: 'A website that shows current weather and forecasts using API integration.',
       techStack: 'React.js, OpenWeatherMap API',
-      githubLink: 'https://github.com/yourusername/weather-website',
+      githubLink: 'https://leborobin.github.io/Weather-project-TUT/',
       image: img14
     }
   ];

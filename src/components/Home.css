@@ -1,36 +1,39 @@
 .home {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffe4e1; /* Light Pink */
-  }
-  
-  .home h2 {
-    font-size: 3rem;
-    color: #ff69b4; /* Pink */
-  }
-  
-  .home p {
-    font-size: 1.5rem;
-    color: #ff69b4;
-  }
-  
-  .home button {
-    margin-top: 2rem;
-    padding: 0.75rem 1.5rem;
-    background-color: #ff69b4; /* Pink */
-    color: #fff;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .home img {
-    margin-top: 2rem;
-    border-radius: 50%;
-    width: 250px; /* Increased size */
-    height: 250px; /* Increased size */
-    object-fit: cover;
-  }
-  
+  text-align: center;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+.home img {
+  border-radius: 50%;
+  border: 5px solid pink;
+  width: 300px; /* Increased size */
+  height: 300px; /* Increased size */
+  object-fit: cover;
+}
+
+.home h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.home p {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.home button {
+  background-color: pink;
+  color: white;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.home button:hover {
+  background-color: #ff69b4;
+}

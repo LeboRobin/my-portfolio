@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Contact.css';
+import axios from 'axios'; // Ensure you have axios installed
 
 function Contact() {
   const [formData, setFormData] = useState({
@@ -18,21 +19,19 @@ function Contact() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    const response = await fetch('http://localhost:5000/api/contact', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        name: formData.name,
-        email: formData.email,
-        message: formData.message,
-      }),
-    });
-  
-    if (response.ok) {
-      alert('Message sent successfully!');
-    } else {
+    try {
+      const response = await axios.post('http://localhost:5000/api/contact', formData); // Ensure the port matches your backend
+
+      // Check if the response is successful
+      if (response.status === 200) {
+        alert('Message sent successfully!');
+        // Reset form fields
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        alert('Failed to send message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error sending message:', error);
       alert('Failed to send message. Please try again.');
     }
   };
